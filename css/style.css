@@ -9,7 +9,7 @@
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url("../images/banner.png");
+    background-image: url("../images/cover.png");
     background-size: cover;
     background-position: center;
 }
