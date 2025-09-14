@@ -22,6 +22,20 @@ nav {
     padding-right: 8%;
     
 }
+/* Default menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Menu button hidden by default */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
 .logo {
     color: white;
     font-size: 35px;
@@ -311,4 +325,141 @@ footer p:nth-child(2) {
     color: #f9004d;
     bottom: 35px;
     font-size: 14px;
+}
+
+/* Responsive Section  */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul li {
+        padding: 8px 15px;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        width: 90%;
+    }
+
+    .box {
+        flex-wrap: wrap;
+    }
+
+    .cart {
+        width: 80%;
+    }
+
+    .title h2 {
+        font-size: 50px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+/* Mobile responsive */
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: #191919;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.4s;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .newslatter form {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 40px;
+    }
+
+    .about-text h5 {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .cart {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    footer p:nth-child(2) {
+        width: 90%;
+        font-size: 15px;
+    }
+}
+
+/* Extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .title h2 {
+        font-size: 32px;
+    }
+
+    .contact-me p {
+        font-size: 22px;
+        text-align: center;
+    }
 }

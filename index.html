@@ -14,16 +14,25 @@
     <!-- hero section  -->
      <div class="hero">
         <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-            <a href="#" class="btn">Subscribe</a>
-        </nav>
+    <h2 class="logo">Portfo<span>lio</span></h2>
+
+    <!-- Menu button (hamburger) -->
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Navbar links -->
+    <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <a href="#" class="btn">Subscribe</a>
+</nav>
+
         <!-- Banner section  -->
         <div class="content">
             <h4>Hello, my name is</h4>
@@ -115,5 +124,15 @@
             </div>
             <p class="end">Copyright &copy; By Jannatul Lima</p>
          </footer>
+
+         <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>
